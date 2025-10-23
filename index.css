@@ -31,12 +31,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .headers{ 
     width: 100%;
     height: 60px;
     margin: auto;
+    position: fixed;
     display: flex;
     padding: 5px 10px;
     align-items: center;
@@ -46,7 +47,7 @@
 .logo{ 
     width: 60%;
     height: 40px;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     text-align: center;
     justify-content: center;
     padding: 0 2px;
@@ -69,13 +70,13 @@
 }
 .linkCont{ 
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: auto;
     list-style: none;
 }
 .linkCont a{
     width: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     color: aliceblue;
     text-decoration: none;
@@ -86,41 +87,151 @@
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
-    gap: 20px;
+    padding: 0 80px;
+    gap: 30px;
     background: #40171f;
 }
 .left {
     text-align: start;
     align-content: center;
-    line-height: 45px;
+    line-height: 30px;
     padding: 0 10px;
     width: 100%;
-    border: 2px solid whitesmoke;
+    /* border: 2px solid whitesmoke; */
 }
 .left #pp{ 
     font-size: 1.5rem;
     font-family: var(--font-script);
-    color: #FFDB58;
+    color: #fac70e;
+    line-height: 50px;
 }
 .statement{ 
     width: 60%;
-    height: 30px;
+    height: 60px;
     max-width: 65%;
     text-align: start;
-    line-height: 15px;
-    border: 2px solid yellowgreen;
+    line-height: 50px;
+    /* border: 2px solid yellowgreen; */
 }
+
 .para{ 
     font-size: 1.4rem;
-    line-height: 10px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
 .right{
     width: 100%; 
-    border: 2px solid whitesmoke;
+    /* border: 2px solid whitesmoke; */
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.right img{ 
+    width: 80%;
+    align-self: center;
 }
 .logo{
     color: whitesmoke;
     
+}
+.order{
+    border: 2px groove yellow ;
+   background: #fac70e;
+   padding: 5px 10px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.order:hover{ 
+    background: transparent;
+    font-size: small;
+    color: whitesmoke;
+    border: 2px groove whitesmoke;
+}
+.ord{ 
+    border: 2px groove whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ord:hover{ 
+    border: 2px groove yellow;
+    background: #fac70e;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #000;
+}
+.stats{ 
+    color: whitesmoke;
+    width: 65%;
+    line-height: 20px;
+    max-width: 75%;
+}
+.pap{ 
+    font-size: 0.78rem;
+}
+
+.btns{ 
+    margin-top: 20px;
+}
+
+/* Ion Think This all for The Small Desktop View, Let me continue to work for the other smaller and also Screen sizes  */
+
+@media screen and (min-width: 300px) and (max-width: 600px){ 
+    .headers{ 
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        display: flex;
+        background: #40171f;
+        /* border: 2px solid #223fcd; */
+        z-index: 2;
+    }
+  .navBar{ 
+    width: 40%;
+    height: 100vh;
+    left: 0;
+    top: 60px;
+    /* display: block; */
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    position: absolute;
+    background: #40171f;
+  }
+  .linkCont{ 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 10px;
+    border: 2px groove #fd2c34;
+    gap: 70px;
+  }
+  /* Well This Is For The Appearing and Evaporating of the Nav-Bar so i will continue */
+  .navBar{ 
+    visibility: hidden;
+  }
+  .section{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    top: 60px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    /* display: block; */
+    border: 2px solid #fac70e;
+    padding: 0, 2px;
+    gap: 20px;
+  }
+  .left{ 
+   border: 2px solid #141;
+   width: 100%;
+  }
+  .right{ 
+  border: 2px solid #141;
+  width: 100%;
+  }
 }
