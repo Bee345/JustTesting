@@ -176,7 +176,22 @@
 .btns{ 
     margin-top: 20px;
 }
-
+#navBtn{ 
+    width: 40px;
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid #40171f;
+    box-shadow: 3px 3px 9px lightcoral;
+}
+/* #navBtn i{ 
+    font-family: 1rem;
+} */
+ .fa-bars{ 
+    font-size: 1.5rem;
+    color: whitesmoke;
+ }
 /* Ion Think This all for The Small Desktop View, Let me continue to work for the other smaller and also Screen sizes  */
 
 @media screen and (min-width: 300px) and (max-width: 600px){ 
@@ -199,20 +214,25 @@
     padding: 0 20px;
     flex-direction: column;
     position: absolute;
+    justify-content: center;
     background: #40171f;
+    z-index: 1;
   }
-  .linkCont{ 
+  .linkCont{
     display: flex;
     width: 100%;
+    /* height: 80vh; */
     flex-direction: column;
     padding: 10px 10px;
+    margin: auto;
     border: 2px groove #fd2c34;
-    gap: 70px;
+    gap: 40px;
   }
   /* Well This Is For The Appearing and Evaporating of the Nav-Bar so i will continue */
   .navBar{ 
     visibility: hidden;
   }
+  /* Continuation Of This design */
   .section{ 
     width: 100%;
     height: 100vh;
