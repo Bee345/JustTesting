@@ -206,52 +206,52 @@
     }
   .navBar{ 
     width: 40%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     left: 0;
     top: 60px;
-    /* display: block; */
-    display: flex;
     padding: 0 20px;
-    flex-direction: column;
     position: absolute;
-    justify-content: center;
+    justify-content: flex-start;
     background: #40171f;
     z-index: 1;
+    display: none;
+    transition: all 0.4s ease, transform 0.3s ease;
   }
   .linkCont{
     display: flex;
     width: 100%;
+    height: 100%;
     /* height: 80vh; */
     flex-direction: column;
     padding: 10px 10px;
     margin: auto;
-    border: 2px groove #fd2c34;
-    gap: 40px;
+    gap: 20px;
   }
   /* Well This Is For The Appearing and Evaporating of the Nav-Bar so i will continue */
-  .navBar{ 
-    visibility: hidden;
+  .navBar.show{ 
+    display: block;
+    /* opacity: 1; */
+    transform: translateX(0);
   }
   /* Continuation Of This design */
   .section{ 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     top: 60px;
     position: relative;
     flex-direction: column;
     align-items: center;
     /* display: block; */
-    border: 2px solid #fac70e;
-    padding: 0, 2px;
+    padding: 4px 8px;
     gap: 20px;
   }
   .left{ 
-   border: 2px solid #141;
    width: 100%;
+   padding: 10px 5px;
+   /* flex:1; */
   }
   .right{ 
-  border: 2px solid #141;
   width: 100%;
   }
 }
